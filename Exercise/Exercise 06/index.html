@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 06 個人簡歷網頁</title>
+    <style>
+        header {
+            background: url("https://i.pinimg.com/736x/8a/3f/fb/8a3ffb95f36e96fefcaaa2a4ab077b20.jpg");
+            min-height: 50mm;
+            border: -10mm;
+            margin: -1.5mm;
+        }
+        section.side {
+            background: url("data:image/jpeg;base64,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");
+            background-repeat: no-repeat;
+        }
+        #format {
+            color: rgb(34, 76, 116);
+            text-shadow: 0.2em 0.1em 0.2em rgba(211, 37, 159, 0.719);
+        }
+    </style>
+</head>
+<body>
+        
+    <header>
+        <h1 class="format">Exercise 06</h1>
+    </header>
+
+    <section class="side">
+        <ul>
+            <li>
+                <a href="">簡歷</a>
+            </li>
+            <li>
+                <a href="">專業</a>
+            </li>
+            <li>
+                <a href="">作品</a>
+            </li>
+            <li>
+                <a href="">連絡方式</a>
+            </li>
+        </ul>
+    </section>
+
+    <footer id="format">
+        <h1>Exercise 06 footer</h1>
+    </footer>
+
+</body>
+</html>

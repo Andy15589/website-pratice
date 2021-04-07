@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 09</title>
+    <style>
+        body {
+            margin:0;
+            background: blueviolet;
+        }
+        div {
+            margin:0;
+        }
+        .grid_box {
+            display: grid;
+            grid-template: repeat(11,1fr)/ repeat(6,1fr);
+            background: cadetblue;
+            border: 1px black solid;
+            height:fit-content
+            width: 100vw;
+            margin: 0;
+        }
+        .section {
+            background: rgb(255, 255, 255);
+            text-align: center;
+            margin: 0;
+            padding: 15px;
+            border:2px solid black;
+        }
+        .title {
+            background: aquamarine;
+            grid-column:1 / span 6;
+        }
+        .sub_title1 {
+            background: yellow;
+            grid-column:1 / span 3;
+        }
+        .sub_title2 {
+            background: yellow;
+            grid-column:4 / span 3;
+        }
+        .flow_property {
+            background: rgb(167, 236, 27);
+            grid-row:3 / span 4;
+            grid-column:1 / 2 ;
+        }
+        .flow_lack {
+            background: violet;
+            grid-row:3 / span 3;
+            grid-column: 4 / 5;
+        }
+        .unflow_property {
+            background: green;
+            grid-row:7 / span 4;
+        }
+        .solid_property {
+            background: rgb(255, 255, 255);
+            grid-row:7 / span 4;
+        }
+        .row_span2 {
+            background: rgb(35, 182, 35);
+            grid-row: 8 / span 2;
+            grid-column: 4 / 5;
+        }
+        .final{
+            background: yellow;
+        }
+        .color1{
+            background:violet ;
+        }
+        .color2{
+            background:rgb(187, 46, 140) ;
+        }
+        .color3{
+            background: rgb(35, 182, 35);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid_box">
+        <div class="section title">資產負債表</div>
+        <div class="section sub_title1">資產</div>
+        <div class="section sub_title2">負債及股東權益</div>
+        <div class="section flow_property">流動資產</div>
+        <div class="section">現金</div>
+        <div class="section">399,526</div>
+        <div class="section flow_lack">流動負債</div>
+        <div class="section">短期借款</div>
+        <div class="section">1,634,870</div>
+        <div class="section">存款</div>
+        <div class="section">819,954</div>
+        <div class="section"></div>
+        <div class="section">1,912,740</div>
+        <div class="section">應收帳款</div>
+        <div class="section">945,494</div>
+        <div class="section">應付帳款</div>
+        <div class="section">277,870</div>
+        <div class="section"></div>
+        <div class="section">2,164,974</div>
+        <div class="section color2">非流動負債</div>
+        <div class="section">長期借款</div>
+        <div class="section">69,600</div>
+        <div class="section unflow_property">非流動資產</div>
+        <div class="section solid_property">固定資產</div>
+        <div class="section"></div>
+        <div class="section color1">負債合計</div>
+        <div class="section"></div>
+        <div class="section">1,982,340</div>
+        <div class="section"></div>
+        <div class="section row_span2">股東權益</div>
+        <div class="section">股本</div>
+        <div class="section">1,102,186</div>
+        <div class="section">1,361,096</div>
+        <div class="section">保留盈餘</div>
+        <div class="section">441,544</div>
+        <div class="section"></div>
+        <div class="section color3">股東權益合計</div>
+        <div class="section"></div>
+        <div class="section">1,543,730</div>
+        <div class="section final">資產合計</div>
+        <div class="section final"></div>
+        <div class="section final">3,526,070</div>
+        <div class="section final">負債及股東權益</div>
+        <div class="section final"></div>
+        <div class="section final">3,526,070</div>
+    </div>
+</body>
+</html>

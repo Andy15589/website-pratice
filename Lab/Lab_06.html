@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課表</title>
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+        }
+
+        #heading {
+            background-color: lightblue;
+            color: rgb(0, 0, 0);
+            font-size: 2rem;
+            font-family: 標楷體;
+        }
+
+        .content {
+            font-family: verdana;
+            font-size: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border-collapse: separate;
+            width: auto;
+            border: 2px solid rgb(61, 61, 133);
+            border-radius: 3mm;
+        }
+
+        td.nap {
+            background: url("https://stickershop.line-scdn.net/stickershop/v1/product/1416812/LINEStorePC/main.png;compress=true");
+
+        }
+
+        tr.title {
+            background: url("https://media.tenor.com/images/0207c1f8c95b3b8f1d433ef3acf08b86/tenor.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        p.thick {
+            font-weight: bold;
+            color: indigo;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            height: 100vh;
+        }
+        .flex_nowrap {
+            display: flex;
+            align-items: stretch;
+        }
+    </style>
+</head>
+
+<body>
+<div class="flex">
+    <div style="width:100vw; background-color: beige; margin: 0; flex-grow: 1; font-size: 3rem;" >
+        學務系統
+    </div>
+
+    <div class="flex_nowrap" style="flex-grow: 1; background-color: blue; flex-grow: 6;">
+
+        <div style="background-color: blueviolet; width: 165px; flex-grow: 1;">
+            <ul style="border:rgb(0, 0, 0) ;background-color: blueviolet; margin: 0; min-height: max-content;">
+                <li>首頁</li>
+                <li>課表</li>
+                <li>選課</li>
+            </ul>
+        </div>
+        
+        <div style="background-color: rgb(134, 134, 91); flex-grow: 4;">
+            <table border="1" align="center">
+                <captio id="heading">課表</caption>
+                    <thead>
+                        <tr class="title">
+                            <th></th>
+                            <th>星期一</th>
+                            <th>星期二</th>
+                            <th>星期三</th>
+                            <th>星期四</th>
+                            <th>星期五</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9:10~10:00</td>
+                            <td>C++</td>
+                            <td>C++</td>
+                            <td>JAVA</td>
+                            <td>JAVA</td>
+                            <td>Python</td>
+                        </tr>
+                        <tr>
+                            <td>10:10~11:00</td>
+                            <td>C++</td>
+                            <td>C++</td>
+                            <td>JAVA</td>
+                            <td>JAVA</td>
+                            <td>Python</td>
+                        </tr>
+                        <tr>
+                            <td>11:10~12:00</td>
+                            <td>Data Structure</td>
+                            <td>Data Structure</td>
+                            <td>Algorithm</td>
+                            <td>Algorithm</td>
+                            <td>Algorithm</td>
+                        </tr>
+                        <tr>
+                            <td>12:00~01:10</td>
+                            <td style="text-align: center;font-size: 1.2rem;" colspan="5" , class="nap">
+                                <p class="thick">午休</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>01:10~02:00</td>
+                            <td>Data Structure</td>
+                            <td>Data Structure</td>
+                            <td>Algorithm</td>
+                            <td>Algorithm</td>
+                            <td>CSS</td>
+                        </tr>
+                        <tr>
+                            <td>02:10~03:00</td>
+                            <td>CSS</td>
+                            <td>CSS</td>
+                            <td>HTML5</td>
+                            <td>HTML5</td>
+                            <td>Javascript</td>
+                        </tr>
+                        <tr>
+                            <td>03:10~04:00</td>
+                            <td>CSS</td>
+                            <td>CSS</td>
+                            <td>HTML5</td>
+                            <td>HTML5</td>
+                            <td>Javascript</td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
